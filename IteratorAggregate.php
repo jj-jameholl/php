@@ -84,7 +84,7 @@ class myData  implements IteratorAggregate ,ArrayAccess {
     }
 
     public function getIterator() {
-        return new ArrayIterator1($this);
+        return new ArrayIterator($this);
     }
 }
 
@@ -94,5 +94,6 @@ foreach($obj as $key => $value) {
     echo $key.":".$value;
     echo "\n";
 }
+print_r($obj['property2']);
 
 ?>
